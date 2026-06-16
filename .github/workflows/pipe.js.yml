@@ -20,9 +20,10 @@ jobs:
       with:
         node-version: 18.x
         cache: 'npm'
-
-    - name: Executar testes
+    - name: Install dependencies
       run: npm install
+      
+    - name: Executar testes
       run: npm test
 
   
